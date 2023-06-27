@@ -18,10 +18,4 @@ interface LineProps {
 export default function lineChart({
   options,
   data,
-}: LineProps) {
-  return (
-    <div>
-      <Chart type={options} data={data} />
-    </div>
-  );
-}
+}: LineProps) {}
