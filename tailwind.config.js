@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const withMT = require("@material-tailwind/react/utils/withMT");
- 
+
 module.exports = withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -19,7 +19,12 @@ module.exports = withMT({
         warning: "#FFB200", // Substitua pelo valor da sua cor personalizada
       },
       fontFamily: {
-        sans: ['DM Sans', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: [
+          "DM Sans",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
       },
       fontWeight: {
         normal: 400,
@@ -27,5 +32,5 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animated")],
 });
