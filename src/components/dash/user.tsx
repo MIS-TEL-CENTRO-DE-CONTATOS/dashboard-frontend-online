@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface UserProps {
   urlAvatar: StaticImageData | string;
@@ -24,9 +25,11 @@ export default function User({
       </div>
       <div className="ml-2 flex flex-col justify-center">
         <p className="text-xs">Bem-vindo(a)</p>
-        <h1 className="text-sm font-semibold">
-          {UserName}
-        </h1>
+        <Link href="#">
+          <h1 className="text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primaryTel to-orange-800">
+            {UserName}
+          </h1>
+        </Link>
         <h3 className="text-xs">{UserCargo}</h3>
       </div>
     </div>

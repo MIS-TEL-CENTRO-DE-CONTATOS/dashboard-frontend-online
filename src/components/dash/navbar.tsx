@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <div>
       <nav
-        className={`flex flex-col shadow-xl h-auto justify-between ml-2 rounded-xl  bg-gray-900 dark:bg-gray-800 animate-ease-in-out duration-300 ${
+        className={`flex flex-col shadow-xl h-auto justify-between ml-1.5 rounded-xl  bg-gray-900 dark:bg-gray-800 animate-ease-in-out duration-300 ${
           isOpen ? "w-32" : "w-20"
         }`}
       >
@@ -99,7 +99,7 @@ export default function Navbar() {
               onClick={toggleNavbar}
               className="transition-all duration-200"
             >
-              <div className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 cursor-pointer transition-colors duration-200">
+              <div className="p-3 bg-t rounded-full bg-gradient-to-tl from-primaryTel to-orange-800 hover:from-orange-900 hover:to-orange-800 cursor-pointer transition-colors duration-200">
                 {isOpen ? (
                   <FiChevronLeft
                     width={32}
