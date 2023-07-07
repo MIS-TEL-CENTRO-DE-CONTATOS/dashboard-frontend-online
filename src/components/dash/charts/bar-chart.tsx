@@ -10,21 +10,14 @@ type ChartType = keyof ChartTypeRegistry;
 interface ChartProps {
   titleChartProps: string | null;
   tipoGrafico: ChartType;
-  columnColor: string;
 }
 
 export default function BarExample({
   titleChartProps,
   tipoGrafico,
-  columnColor,
 }: ChartProps) {
   const chartRef = useRef<HTMLCanvasElement | null>(null);
   const chartInstanceRef = useRef<Chart | null>(null);
-
-  const numbers: number[] = [1, 2, 3, 4, 5];
-  const strings: string[] = numbers.map((num) =>
-    num.toString()
-  );
 
   useEffect(() => {
     if (chartRef.current) {
@@ -37,8 +30,7 @@ export default function BarExample({
         Chart.register(...registerables);
 
         const config: ChartConfiguration<
-          typeof tipoGrafico,
-          typeof columnColor
+          typeof tipoGrafico
         > = {
           type: tipoGrafico,
           data: {
@@ -54,12 +46,12 @@ export default function BarExample({
               {
                 label: "Vendas",
                 data: [1200, 1500, 1000, 1800, 2000, 1600],
-                backgroundColor: columnColor,
+                backgroundColor: "black",
               },
               {
                 label: "alo",
                 data: [100, 500, 1400, 1200, 2000, 1600],
-                backgroundColor: columnColor,
+                backgroundColor: "orange",
               },
             ],
           },

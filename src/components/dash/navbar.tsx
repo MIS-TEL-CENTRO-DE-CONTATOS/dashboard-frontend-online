@@ -28,7 +28,7 @@ export default function Navbar() {
             <ul>
               <li className="my-8 text-center">
                 <a href="#">
-                  <span className="h-auto w-auto flex text-gray-500 dark:text-gray-300 justify-center px-6 items-center hover:text-primaryTel dark:hover:text-white transition-colors duration-200">
+                  <span className="h-auto w-auto flex text-gray-500 dark:text-gray-300 justify-center  px-6 items-center animate-duration-75  hover:translate-y-2 hover:transform-y-2 hover:text-primaryTel dark:hover:text-white transition-colors duration-200">
                     <FiGrid className="" width={32} />
                     {isOpen && (
                       <div className="pl-2 font-semibold text-xs animate-fade-left animate-duration-600">
