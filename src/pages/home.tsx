@@ -67,22 +67,18 @@ export default function Home() {
               <BarExample
                 titleChartProps="VENDAS X ALO"
                 tipoGrafico="line"
-                columnColor="#F68B1F"
               />
               <BarExample
                 titleChartProps="Example BAR"
                 tipoGrafico="bar"
-                columnColor="black"
               />
               <BarExample
                 titleChartProps="Example BAR"
                 tipoGrafico="line"
-                columnColor="blue"
               />
               <BarExample
                 titleChartProps="Example BAR"
                 tipoGrafico="bar"
-                columnColor="black"
               />
             </div>
           </div>
